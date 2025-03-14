@@ -85,6 +85,7 @@ nav ul li a {
     position: absolute;
     display: flex;
     width: 100%;
+    overflow-y: hidden;
 }
 .hero-text  {
    height:calc(100%-50px);
@@ -153,7 +154,6 @@ nav ul li a {
 }
 .donate {
     width: 100%;
-    height: 100vh;
     background-color: var(--bg-color);
     display: flex;
     align-items: center;
@@ -251,4 +251,90 @@ nav ul li a {
     justify-content: space-evenly;
     margin-bottom:36px;
     
+}
+.hero-image-mobile {
+    display: none;
+    
+}
+.donate-mobile {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .hero-image {
+        width: 70%;
+        height:auto;
+        position:static;
+    }
+    .hero-text {
+        position: static;
+    }
+    .hero video {
+        height:100%;
+        width: auto;
+        overflow-x: hidden;
+    }
+    .hero video::-webkit-scrollbar {
+        display: none;
+    }
+    .hero-text {
+        width: 100%;
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .hero-image-desktop {
+        display: none;
+    }
+    .hero-image-mobile {
+        display: flex;
+    }
+    .hero-logo {
+        margin-top:24px;
+    }
+    .hero-text h1 {
+        display: none;
+    }
+    .hero-text p {
+       font-size: 3rem;
+    }
+    .meet-the-team p a {
+        font-size: 2rem;
+    }
+ .donate {
+    flex-direction: column;
+    
+ }
+ .donate-text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 30px;
+ }
+ .donate-block {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--text-color);
+    margin-top: 30px;
+ }
+.donate-desktop {
+    display: none;
+}
+.donate-mobile {
+    display: block;
+}
+.arrow {
+    transform: rotate(90deg);
+}
 }
