@@ -89,7 +89,7 @@ nav ul li a {
     overflow-y: hidden;
 }
 .hero-text  {
-   height:calc(100%-50px);
+   height:100%;
 }
 .hero-text h1 {
     font-size: 2rem;
@@ -308,6 +308,14 @@ float:left;
 .bottom-link {
     margin-bottom: 5px;
 }
+.left-link {
+    margin-left:5px;
+}
+.center-link {
+    position: absolute;
+    align-self: center;
+    right:calc(50% - 50px);
+}
 @media screen and (max-width: 768px) {
     .hero-content {
         display: flex;
@@ -401,9 +409,9 @@ float:left;
     width: 100%;
 }
 .links {
-margin-top:0;
+margin-top:60px;
 top:10px;
-  
+margin-left:10px;
 }
 .links ul {
     flex-direction: row;
