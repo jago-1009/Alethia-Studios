@@ -1,22 +1,4 @@
-@font-face {
-    font-family: "Reklame Script W00 Medium";
-    src: url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.eot");
-    src: url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.svg#Reklame Script W00 Medium")format("svg");
-    
-}
-@font-face {
-    font-family: "Brandon Grot W01 Light";
-    src: url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot");
-    src: url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#Brandon Grot W01 Light")format("svg");
-}
+
 
 :root {
     --nav-color: rgb(241, 131, 29);
@@ -24,6 +6,19 @@
     --bg-color: rgb(253, 168, 120);
     --links: rgb(255, 195, 123);
     
+}
+@font-face {
+    font-family: 'April';
+    src: url('/assets/fonts/April.ttf')
+}
+@font-face {
+    font-family: 'Espresso Dolce';
+    src: url('/assets/fonts/EspressoDolce.ttf');
+}
+@font-face {
+    font-family: 'Kun-Kun';
+    src: url('/assets/fonts/KunKun-Bold.otf')format('opentype');
+    font-weight: bold;
 }
 
 html {
@@ -53,7 +48,7 @@ nav ul li a {
     color: var(--nav-color);
     text-decoration: none;
     font-size: 1.25rem;
-    font-family: "Reklame Script W00 Medium";
+    font-family: "Kun-Kun";
     margin-right:24px;
 }
 .hero {
@@ -77,7 +72,7 @@ nav ul li a {
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--nav-color);
-    font-family: "Reklame Script W00 Medium";
+    font-family: "Kun-Kun";
     font-size: 4rem;
     z-index: 4;
     width: 50%;
@@ -116,23 +111,31 @@ nav ul li a {
 .hero-bridge {
     width: 80%;
     margin-top:5%;
-    font-family: "Brandon Grot W01 Light";
-    font-size: 2rem;
+    font-family: "Espresso Dolce";
+    font-size: 1.75rem;
     text-align: center;
     margin-left: 30px;
     margin-right: 30px;
     padding-bottom:30px;
-    
-    font-weight: bold;
+    display: flex;
+    font-weight: normal;
     color:var(--text-color);
     border-bottom: 7px dotted var(--nav-color);
     
+}
+.hero-bridge p {
+    margin-left:20px;
+    width:50%;
+}
+.hero-bridge iframe {
+    width: 50%;
+    height: 300px;
 }
 .body-features {
     width: 50%;
 }
 .body-features h2 {
-    font-family: "Reklame Script W00 Medium";
+    font-family: "Kun-Kun";
     font-size: 3rem;
     text-align: center;
     margin: 0px;
@@ -142,7 +145,7 @@ nav ul li a {
     color:var(--text-color);
 }
 .body-features ul {
-    font-family: 'Brandon Grot W01 Light';
+    font-family: 'April';
     font-size: 1.6rem;
     color:var(--text-color);
     display: flex;
@@ -182,7 +185,7 @@ nav ul li a {
     background-color: var(--text-color);
 }
 .donate-text h2 {
-    font-family: "Reklame Script W00 Medium";
+    font-family: "Kun-Kun";
     font-size: 3rem;
     text-align: center;
     margin: 0px;
@@ -193,7 +196,7 @@ nav ul li a {
 }
 .donate-text p {
     width: 60%;
-    font-family: "Brandon Grot W01 Light";
+    font-family: "April";
     font-size: 1.6rem;
     text-align: center;
     margin: 0px;
@@ -216,7 +219,7 @@ nav ul li a {
    
 }
 .meet-the-team h2 {
-    font-family: "Reklame Script W00 Medium";
+    font-family: "Kun-Kun";
     font-size: 3rem;
     text-align: center;
     margin: 0px;
@@ -226,7 +229,7 @@ nav ul li a {
     color:var(--text-color);
 }
 .meet-the-team p {
-    font-family: "Brandon Grot W01 Light";
+    font-family: "April";
     font-size: 2.5rem;
     text-align: center;
     margin: 0px;
@@ -236,7 +239,7 @@ nav ul li a {
     color:var(--nav-color);
 }
 .meet-the-team p a {
-    font-family: "Brandon Grot W01 Light";
+    font-family: "April";
     font-size: 2.5rem;
     text-align: center;
     margin: 0px;
@@ -370,6 +373,18 @@ float:left;
     flex-direction: column;
     
  }
+ .hero-bridge {
+    flex-direction: column;
+ }
+
+ .hero-bridge p {
+    margin-left:0px;
+    width: 100%;
+ }
+    .hero-bridge iframe {
+        width: 100%;
+        height: 200px;
+    }
  .donate-text {
     width: 100%;
     height: 50%;
