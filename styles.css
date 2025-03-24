@@ -234,11 +234,11 @@ nav ul li a {
     text-align: center;
     margin: 0px;
 
-    margin-bottom:50px;
     font-weight: bold;
     color:var(--nav-color);
 }
-.meet-the-team p a {
+.meet-the-team  a {
+    width: 100%;
     font-family: "April";
     font-size: 2.5rem;
     text-align: center;
@@ -246,6 +246,9 @@ nav ul li a {
     display: flex;
     font-weight: bold;
     color:var(--nav-color);
+    justify-content: center;
+    margin-bottom:50px;
+
 }
 .team-video {
     width: 90%;
@@ -366,8 +369,8 @@ float:left;
     .hero-text p {
        font-size: 3rem;
     }
-    .meet-the-team p a {
-        font-size: 2rem;
+    .meet-the-team  a {
+        font-size: 1.5rem;
     }
  .donate {
     flex-direction: column;
