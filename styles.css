@@ -178,6 +178,7 @@ nav ul li a {
     
 }
 .donate-title {
+    padding: 20px;
 }
 .donate-border {
     width: 90%;
@@ -370,7 +371,16 @@ float:left;
     height: 100px;
     margin-top:15%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
+    .center-link {
+        right:calc(50% - 50px);
+    }
+    .hero-image {
+        width: 60%;
+        height:fit-content;
+    }
+}
+@media screen and (max-width: 700px) {
     .center-link {
         left:0;
     }
@@ -390,6 +400,7 @@ float:left;
         position:static;
     }
     .hero-text {
+        height:50%;
         position: static;
     }
     .hero video {
@@ -421,7 +432,7 @@ float:left;
         display: none;
     }
     .hero-text p {
-       font-size: 3rem;
+       font-size: 2.25rem;
     }
     .meet-the-team  a {
         font-size: 1.5rem;
@@ -490,4 +501,23 @@ margin-left:10px;
 .top-link, .bottom-link {
     margin: 0;
 }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-text {
+        height:70%;
+    }
+    .hero-text p {
+        font-size: 2rem;
+    }
+    .hero-bridge {
+        font-size: 1.25rem;
+    }
+    .hero-bridge iframe {
+        height: 150px;
+    }
+    .hero-bridge p {
+        font-size: 1.25rem;
+    }
+   
 }
