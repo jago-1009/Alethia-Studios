@@ -69,6 +69,11 @@ nav ul {
     height: 100%;
     transition: 0.5s all;
 }
+.steam-wishlist a:hover {
+    scale:1.2;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
 nav ul li a {
     color: var(--nav-color);
     text-decoration: none;
@@ -121,8 +126,12 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-evenly;
+    height:100%;
+
+}
+.hero-description {
+   margin-top:40px !important;
 }
 .hero-content {
     position: absolute;
@@ -139,7 +148,7 @@ nav ul li {
 .hero-text p {
     position: relative;
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.75rem;
     z-index: 10;
 }
 
@@ -539,7 +548,9 @@ float:left;
     }
 }
 @media screen and (max-width: 700px) {
- 
+ .hero-text {
+    justify-content: center;
+ }
    .gallery-content {
     width: 80%;
    }
@@ -589,7 +600,7 @@ float:left;
         display: flex;
     }
     .hero-logo {
-        margin-top:24px;
+        margin-top:-50px;
     }
     .hero-text h1 {
         display: none;
