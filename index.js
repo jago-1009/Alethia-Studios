@@ -12,7 +12,7 @@ $('#gallery-center').on('click', function (e) {
     var imgSrc = target.attr('src');
     var imgAlt = target.attr('alt');
 
-    $('body').append(`<div id="overlay"><img class="overlay-image" src="${imgSrc}"</div>`);
+    $('body').append(`<div id="overlay"><img class="overlay-image" alt="${imgAlt}" src="${imgSrc}"</div>`);
     $('#overlay').fadeIn(200);
     initOverlay();
 })
@@ -27,6 +27,7 @@ $('#gallery-center').animate({
     opacity: 0
 },200, function () {
     $(this).attr('src', target.attr('src'));
+    $(this).attr('alt', target.attr('alt'));
     $(this).animate({opacity: 1}, 200);
 })
 

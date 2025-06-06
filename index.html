@@ -18,32 +18,32 @@
   </head>
 
   <body>
-    <div class="links fade-in-left">
-      <ul>
+    <div tabindex="2" class="links fade-in-left">
+      <ul role="socials">
         <li class="top-link">
           <a
             href="https://www.linkedin.com/company/alethia-studios-company/?viewAsMember=true"
-            ><i class="fa-brands fa-linkedin-in"></i
+            ><i aria-label="Visit our LinkedIn" class="fa-brands fa-linkedin-in"></i
           ></a>
         </li>
         <li>
           <a href="https://www.instagram.com/alethiastudio/?hl=en"
-            ><i class="fa-brands fa-instagram"></i
+            ><i aria-label="Visit our Instagram" class="fa-brands fa-instagram"></i
           ></a>
         </li>
         <li>
           <a href="https://store.steampowered.com/app/3582560/Chef_Niya/"
-            ><i class="fa-brands fa-steam"></i
+            ><i aria-label="View the game on Steam" class="fa-brands fa-steam"></i
           ></a>
         </li>
         <li class="bottom-link">
           <a href="https://www.youtube.com/channel/UCSrmmDgHuUOV7nkZirp9E6Q"
-            ><i class="fa-brands fa-youtube"></i
+            ><i aria-label="See our Youtube videos" class="fa-brands fa-youtube"></i
           ></a>
         </li>
       </ul>
     </div>
-    <nav>
+    <nav tabindex="1" role="navigation">
       <ul>
         <li class="center-link">
           <a href="https://www.alethiastudios.net/"
@@ -53,7 +53,7 @@
               alt="Alethia Studios Logo"
           /></a>
         </li>
-        <div class="link-nav">
+        <ul class="link-nav">
           <li>
             <a
               href="https://drive.google.com/drive/folders/1cqRHylmDp6RKexopGNRGwjtNJbDvwrTk?usp=sharing"
@@ -62,11 +62,11 @@
           </li>
           <li class="left-link"><a href="#">Home</a></li>
           <li><a href="#donate">Donate</a></li>
-        </div>
+        </ul>
       </ul>
     </nav>
 
-    <main>
+    <main role="main">
       <section class="steam-wishlist">
         <a href="https://store.steampowered.com/app/3582560/Chef_Niya/"
           >Wishlist us on Steam!</a
@@ -109,6 +109,7 @@
         <!-- VIDEO -->
         <div class="hero-bridge">
           <iframe
+            tabindex="3"
             width=""
             height=""
             src="https://www.youtube.com/embed/KZs7bUdBh5Q?si=T30R1Jg7uys1GQL_"
@@ -137,8 +138,8 @@
               />
             </h2>
 
-            <div class="story-container image-right">
-              <p class="story-text">
+            <div  class="story-container image-right">
+              <p tabindex="4" class="story-text">
                 Chef Niya is a rhythm cooking RPG Where the player follows Niya
                 on her journey to become a fully fledged chef. <br />
                 Become the owner of the best food cart in chef Niya! Go on a
@@ -153,7 +154,7 @@
               />
             </div>
             <div class="story-container image-left">
-              <p class="story-text">
+              <p tabindex="5" class="story-text">
                 15 years ago, Niya’s father gifted her the family recipe book.
                 It had three recipes, but Niya was 10 and it meant a lot. Today,
                 Niya is leaving med school to become a chef. Still with only
@@ -176,7 +177,7 @@
                 src="/assets/key_features.png"
               />
             </h2>
-            <ul>
+            <ul tabindex="6">
               <li>Experience the thrill of rhythm-based cooking challenges!</li>
               <li>
                 Unlock new recipes and ingredients as you progress through the
@@ -200,24 +201,24 @@
           </h2>
           <div class="gallery-content">
             <div class="gallery-center">
-              <img id="gallery-center" src="/assets/Screenshot1.png" alt="" />
+              <img id="gallery-center" src="/assets/Screenshot1.png" alt="Meet Chef Niya, a cartoony young woman with a chef jacket and pink hair." />
             </div>
             <div class="gallery-slides">
               <ul class="gallery-list">
                 <li class="gallery-slide" id="current">
-                  <img src="/assets/Screenshot1.png" alt="" />
+                  <img src="/assets/Screenshot1.png" alt="Meet Chef Niya, a cartoony young woman with a chef jacket and pink hair." />
                 </li>
                 <li class="gallery-slide">
-                  <img src="/assets/Screenshot2.png" alt="" />
+                  <img src="/assets/Screenshot2.png" alt="A shot of the game. Niya is standing in front of her cart as two people are behind her." />
                 </li>
                 <li class="gallery-slide">
-                  <img src="/assets/Screenshot3.png" alt="" />
+                  <img src="/assets/Screenshot3.png" alt="A screenshot of the rhythm aspect of the game" />
                 </li>
                 <li class="gallery-slide">
-                  <img src="/assets/Screenshot4.png" alt="" />
+                  <img src="/assets/Screenshot4.png" alt="Niya cutting meat." />
                 </li>
                 <li class="gallery-slide">
-                  <img src="/assets/Screenshot5.png" alt="" />
+                  <img src="/assets/Screenshot5.png" alt="Niya cutting bread" />
                 </li>
               </ul>
             </div>
